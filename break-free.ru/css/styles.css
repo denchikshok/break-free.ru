@@ -1,0 +1,151 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url(../img/back2.jpg);
+    background-position: center;
+    font-family: "Roboto Slab", serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ .background img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.overlay {
+    position: absolute;
+    top: 0vh; 
+    width: 100%;
+    height: 22.5%;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    text-align: center;
+}
+
+.overlay h1 {
+  margin: 0;
+  padding: 20px 0; 
+  font-size: 69px;
+}
+
+.right-window {
+    position: absolute;
+    width: 450px;
+    height: 300px; 
+    border-radius: 15px; 
+    border: 2px solid #ccc; 
+    text-align: center;
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    right: 8%;
+    bottom: 360px;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.upper-left-box,
+.lower-left-box {
+    position: absolute;
+    width: 450px;
+    height: 140px;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+}
+
+.upper-left-box p,
+.lower-left-box p,
+.right-window p {
+    margin: 0;
+}
+
+.upper-left-box {
+    bottom: 450px;
+    left: 7%;
+    font-size: 24px;
+}
+
+.lower-left-box {
+    bottom: 200px;
+    left: 7%;
+    font-size: 24px;
+}
+
+.right-box img {
+    position: absolute;
+    right: 3%;
+    bottom: 8px;
+    width: 75px;
+    height: 75px;
+}
+
+.middle-box img {
+    position: absolute;
+    right: 7%;
+    bottom: 0px;
+    width: 90px;
+    height: 90px;
+}
+
+.left-box img {
+    position: absolute;
+    right: 12%;
+    bottom: 9px;
+    width: 70px;
+    height: 70px;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+}
+
+
+.faceButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    position: absolute;
+    top: 140px;
+    left: 65%;
+    overflow: hidden;  
+}
+
+.faceButton:hover {
+  background-color: black;
+}
+
+.faceButton .faceContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faceButton img {
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+    border-image-width: auto;
+}
+
+
